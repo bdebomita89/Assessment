@@ -2,7 +2,7 @@
 
 Make sure you have the following installed:
 
-- [Java JDK 8+](https://adoptopenjdk.net/)  
+- [Java JDK 1.8](https://adoptopenjdk.net/)  
 - [Apache Maven](https://maven.apache.org/install.html)  
 - [Git](https://git-scm.com/)
 
