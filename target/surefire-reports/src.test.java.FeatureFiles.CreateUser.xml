@@ -1,0 +1,13 @@
+<testsuite failures="0" name="src/test/java/FeatureFiles/CreateUser.feature" skipped="0" tests="1" time="1.312652">
+  <testcase classname="src.test.java.FeatureFiles.CreateUser" name="Create new record by using post method" time="1.312652">
+    <system-out>Given url 'https://api.escuelajs.co/api/v1/products' ...................... passed
+* def randomProductId = Math.floor(Math.random() * 400) + 100 ............. passed
+* def title = 'New Karate Product - Debomita' + randomProductId ........... passed
+* print 'Generated title:', title ......................................... passed
+And request ............................................................... passed
+When method post .......................................................... passed
+Then status 201 ........................................................... passed
+* def productId = response.id ............................................. passed
+* print 'Created product ID:', productId .................................. passed</system-out>
+  </testcase>
+</testsuite>

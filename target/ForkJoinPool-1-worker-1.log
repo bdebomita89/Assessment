@@ -1,0 +1,162 @@
+14:32:58.282 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js
+14:32:58.307 [print] Generated title: New Karate Product - Debomita314
+14:32:58.483 request:
+1 > POST https://api.escuelajs.co/api/v1/products
+1 > Accept-Encoding: gzip,deflate
+1 > Connection: Keep-Alive
+1 > Content-Length: 158
+1 > Content-Type: application/json; charset=UTF-8
+1 > Host: api.escuelajs.co
+1 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_452)
+{"title":"New Karate Product - Debomita314","price":150,"description":"Created via Karate POST","categoryId":51,"images":["https://placeimg.com/640/480/any"]}
+
+14:32:59.739 response time in milliseconds: 1254.45
+1 < 201
+1 < Access-Control-Allow-Origin: *
+1 < Connection: keep-alive
+1 < Content-Length: 508
+1 < Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;img-src 'self' data: https://cdn.jsdelivr.net;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 < Content-Type: application/json; charset=utf-8
+1 < Cross-Origin-Opener-Policy: same-origin
+1 < Cross-Origin-Resource-Policy: same-origin
+1 < Date: Wed, 07 May 2025 09:02:59 GMT
+1 < Etag: W/"1fc-nqriHdQF1jjml7HbzcUj7Rl87Bk"
+1 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 < Origin-Agent-Cluster: ?1
+1 < Referrer-Policy: no-referrer
+1 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746608579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o%2Bab0chimpTi0juDvBULuwrIQr0qr4RbtPj6rFtB1i4%3D"}]}
+1 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746608579&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=o%2Bab0chimpTi0juDvBULuwrIQr0qr4RbtPj6rFtB1i4%3D
+1 < Server: Cowboy
+1 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 < Via: 1.1 vegur
+1 < X-Content-Type-Options: nosniff
+1 < X-Dns-Prefetch-Control: off
+1 < X-Download-Options: noopen
+1 < X-Frame-Options: SAMEORIGIN
+1 < X-Permitted-Cross-Domain-Policies: none
+1 < X-Xss-Protection: 0
+{"id":99,"title":"New Karate Product - Debomita314","slug":"new-karate-product-debomita314","price":150,"description":"Created via Karate POST","category":{"id":51,"name":"Shoesies","slug":"shoesies","image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Vg9G2ZJWpRWbIG3NELT_V6B8O8z0YhDJgQ&s","creationAt":"2025-05-06T17:05:38.000Z","updatedAt":"2025-05-06T17:46:19.000Z"},"images":["https://placeimg.com/640/480/any"],"creationAt":"2025-05-07T09:02:59.000Z","updatedAt":"2025-05-07T09:02:59.000Z"}
+
+14:32:59.754 [print] Created product is 99
+t is 98
+14:32:37.563 request:
+2 > GET https://api.escuelajs.co/api/v1/products/98
+2 > Accept-Encoding: gzip,deflate
+2 > Connection: Keep-Alive
+2 > Host: api.escuelajs.co
+2 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_452)
+
+14:32:38.347 response time in milliseconds: 783.67
+2 < 200
+2 < Access-Control-Allow-Origin: *
+2 < Connection: keep-alive
+2 < Content-Length: 508
+2 < Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;img-src 'self' data: https://cdn.jsdelivr.net;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+2 < Content-Type: application/json; charset=utf-8
+2 < Cross-Origin-Opener-Policy: same-origin
+2 < Cross-Origin-Resource-Policy: same-origin
+2 < Date: Wed, 07 May 2025 09:02:38 GMT
+2 < Etag: W/"1fc-f+p18O4a+rGKQ/REbhs/TFH4ijs"
+2 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+2 < Origin-Agent-Cluster: ?1
+2 < Referrer-Policy: no-referrer
+2 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746608558&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Wn4fbEYU5aA6Vq2WWBJhbxaZkn5zKuP1GzC3xEQJ6yI%3D"}]}
+2 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746608558&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=Wn4fbEYU5aA6Vq2WWBJhbxaZkn5zKuP1GzC3xEQJ6yI%3D
+2 < Server: Cowboy
+2 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+2 < Via: 1.1 vegur
+2 < X-Content-Type-Options: nosniff
+2 < X-Dns-Prefetch-Control: off
+2 < X-Download-Options: noopen
+2 < X-Frame-Options: SAMEORIGIN
+2 < X-Permitted-Cross-Domain-Policies: none
+2 < X-Xss-Protection: 0
+{"id":98,"title":"New Karate Product - Debomita376","slug":"new-karate-product-debomita376","price":150,"description":"Created via Karate POST","category":{"id":51,"name":"Shoesies","slug":"shoesies","image":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Vg9G2ZJWpRWbIG3NELT_V6B8O8z0YhDJgQ&s","creationAt":"2025-05-06T17:05:38.000Z","updatedAt":"2025-05-06T17:46:19.000Z"},"images":["https://placeimg.com/640/480/any"],"creationAt":"2025-05-07T09:02:37.000Z","updatedAt":"2025-05-07T09:02:37.000Z"}
+
+14:32:38.349 [print] Retrieved product: {
+  "images": [
+    "https://placeimg.com/640/480/any"
+  ],
+  "creationAt": "2025-05-07T09:02:37.000Z",
+  "price": 150,
+  "description": "Created via Karate POST",
+  "id": 98,
+  "title": "New Karate Product - Debomita376",
+  "category": {
+    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5Vg9G2ZJWpRWbIG3NELT_V6B8O8z0YhDJgQ&s",
+    "creationAt": "2025-05-06T17:05:38.000Z",
+    "name": "Shoesies",
+    "id": 51,
+    "slug": "shoesies",
+    "updatedAt": "2025-05-06T17:46:19.000Z"
+  },
+  "slug": "new-karate-product-debomita376",
+  "updatedAt": "2025-05-07T09:02:37.000Z"
+}
+
+14:32:38.350 request:
+3 > PUT https://api.escuelajs.co/api/v1/products/98
+3 > Accept-Encoding: gzip,deflate
+3 > Connection: Keep-Alive
+3 > Content-Length: 41
+3 > Content-Type: application/json; charset=UTF-8
+3 > Host: api.escuelajs.co
+3 > User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_452)
+{"title":"Changed the Title","price":249}
+
+14:32:39.410 response time in milliseconds: 1058.75
+3 < 500
+3 < Access-Control-Allow-Origin: *
+3 < Connection: keep-alive
+3 < Content-Length: 52
+3 < Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;img-src 'self' data: https://cdn.jsdelivr.net;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+3 < Content-Type: application/json; charset=utf-8
+3 < Cross-Origin-Opener-Policy: same-origin
+3 < Cross-Origin-Resource-Policy: same-origin
+3 < Date: Wed, 07 May 2025 09:02:39 GMT
+3 < Etag: W/"34-rlKccw1E+/fV8niQk4oFitDfPro"
+3 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+3 < Origin-Agent-Cluster: ?1
+3 < Referrer-Policy: no-referrer
+3 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746608559&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=xenAB4mNVS1Hk5QLil07b%2BLjRpVljJPgmPEv29Zu%2Fp4%3D"}]}
+3 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746608559&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=xenAB4mNVS1Hk5QLil07b%2BLjRpVljJPgmPEv29Zu%2Fp4%3D
+3 < Server: Cowboy
+3 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+3 < Via: 1.1 vegur
+3 < X-Content-Type-Options: nosniff
+3 < X-Dns-Prefetch-Control: off
+3 < X-Download-Options: noopen
+3 < X-Frame-Options: SAMEORIGIN
+3 < X-Permitted-Cross-Domain-Policies: none
+3 < X-Xss-Protection: 0
+{"statusCode":500,"message":"Internal server error"}
+
+14:32:39.410 status code was: 500, expected: 200, response time: 1059, url: https://api.escuelajs.co/api/v1/products/98, response: {"message":"Internal server error","statusCode":500}
+se time in milliseconds: 1939.47
+4 < 400
+4 < Access-Control-Allow-Origin: *
+4 < Connection: keep-alive
+4 < Content-Length: 268
+4 < Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;img-src 'self' data: https://cdn.jsdelivr.net;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+4 < Content-Type: application/json; charset=utf-8
+4 < Cross-Origin-Opener-Policy: same-origin
+4 < Cross-Origin-Resource-Policy: same-origin
+4 < Date: Wed, 07 May 2025 08:03:20 GMT
+4 < Etag: W/"10c-DHeVIFrSJftRnulE4FAjF7t1QxE"
+4 < Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+4 < Origin-Agent-Cluster: ?1
+4 < Referrer-Policy: no-referrer
+4 < Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746605000&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hou0FQTM92BGWhvMPB4crMXYrNjnbRhv3s4jI6R16qA%3D"}]}
+4 < Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746605000&sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&s=hou0FQTM92BGWhvMPB4crMXYrNjnbRhv3s4jI6R16qA%3D
+4 < Server: Cowboy
+4 < Strict-Transport-Security: max-age=31536000; includeSubDomains
+4 < Via: 1.1 vegur
+4 < X-Content-Type-Options: nosniff
+4 < X-Dns-Prefetch-Control: off
+4 < X-Download-Options: noopen
+4 < X-Frame-Options: SAMEORIGIN
+4 < X-Permitted-Cross-Domain-Policies: none
+4 < X-Xss-Protection: 0
+{"path":"/api/v1/products/96","timestamp":"2025-05-07T08:03:20.667Z","name":"EntityNotFoundError","message":"Could not find any entity of type \"Product\" matching: {\n    \"relations\": [\n        \"category\"\n    ],\n    \"where\": {\n        \"id\": 96\n    }\n}"}
+
+ucts/80","name":"EntityNotFoundError","message":"Could not find any entity of type \"Product\" matching: {\n    \"relations\": [\n        \"category\"\n    ],\n    \"where\": {\n        \"id\": 80\n    }\n}","timestamp":"2025-05-05T15:29:41.874Z"}

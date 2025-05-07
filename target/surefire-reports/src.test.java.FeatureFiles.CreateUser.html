@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+<meta charset="utf-8">
+    
+<meta content="width=device-width, initial-scale=1, shrink-to-fit=no" name="viewport">
+    
+<link href="res/bootstrap.min.css" rel="stylesheet" type="text/css">
+    
+<link href="res/karate-report.css" rel="stylesheet" type="text/css">
+    
+<link href="favicon.ico" rel="shortcut icon">
+    
+<script src="res/jquery.min.js" type="text/javascript"></script>
+    <script src="res/jquery.tablesorter.min.js" type="text/javascript"></script>
+    <script src="res/bootstrap.min.js" type="text/javascript"></script>
+    <script src="res/karate-report.js" type="text/javascript"></script>
+    
+<title>src.test.java.FeatureFiles.CreateUser</title>
+  
+</head>
+  
+<body>
+    
+<div id="root-container">
+      
+<div id="leftnav">
+        
+<div class="nav-logo">
+          
+<a href="karate-summary.html">
+            <img alt="Karate" src="res/karate-logo.svg">
+          </a>
+          
+<div class="nav-count">
+            
+<div class="bg-success" id="nav-pass">1</div>
+            
+<div class="bg-danger" id="nav-fail">0</div>
+          
+</div>
+        
+</div>
+        
+<div id="nav-type">Scenarios</div>         
+        
+<div id="nav-date">2025-05-05 08:12:14 PM</div>        
+      
+<div class="nav-container">
+<div class="nav-item passed">
+<a href="#[1:3]">[1:3] Create new record by using post method </a>
+</div>
+</div>
+</div>
+      
+<div id="content">
+      
+<div class="page-heading alert alert-primary">
+<a href="karate-summary.html">Summary</a><span class="feature-label">|</span><a href="karate-tags.html">Tags</a><span class="feature-label">|</span><span class="feature-label">Feature:</span><span class="feature-name">src/test/java/FeatureFiles/CreateUser.feature</span><span class="feature-description">Demonstrate Crud operation</span>
+</div>
+<div class="scenario">
+<div class="scenario-heading" id="[1:3]">
+<div class="heading-container">
+<div class="scenario-tags"></div>
+<span class="scenario-keyword">Scenario: [1:3]</span><span class="scenario-name">Create new record by using post method </span>
+</div>
+<div class="scenario-time passed">ms: 1313</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="1">
+<div class="step-ref passed">1</div>
+<div class="step-cell passed">Given url 'https://api.escuelajs.co/api/v1/products'</div>
+</div>
+<div class="time-cell passed">3</div>
+</div>
+<div class="preformatted" data-parent="1">20:12:12.673 skipping bootstrap configuration: could not find or read file: classpath:karate-config.js</div>
+<div class="step-row">
+<div class="step-container" id="2">
+<div class="step-ref passed">2</div>
+<div class="step-cell passed">* def randomProductId = Math.floor(Math.random() * 400) + 100</div>
+</div>
+<div class="time-cell passed">7</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="3">
+<div class="step-ref passed">3</div>
+<div class="step-cell passed">* def title = 'New Karate Product - Debomita' + randomProductId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="4">
+<div class="step-ref passed">4</div>
+<div class="step-cell passed">* print 'Generated title:', title</div>
+</div>
+<div class="time-cell passed">1</div>
+</div>
+<div class="preformatted" data-parent="4">20:12:12.700 [print] Generated title: New Karate Product - Debomita211</div>
+<div class="step-row">
+<div class="step-container" id="5">
+<div class="step-ref passed">5</div>
+<div class="step-cell passed">And request</div>
+</div>
+<div class="time-cell passed">32</div>
+</div>
+<div class="preformatted" data-parent="5">{
+  "title": "#(title)",
+  "price": 150,
+  "description": "Created via Karate POST",
+  "categoryId": 1,
+  "images": ["https://placeimg.com/640/480/any"]
+}</div>
+<div class="step-row">
+<div class="step-container" id="6">
+<div class="step-ref passed">6</div>
+<div class="step-cell passed">When method post</div>
+</div>
+<div class="time-cell passed">1260</div>
+</div>
+<div class="preformatted" data-parent="6">20:12:12.914 request:
+1 &gt; POST https://api.escuelajs.co/api/v1/products
+1 &gt; Accept-Encoding: gzip,deflate
+1 &gt; Connection: Keep-Alive
+1 &gt; Content-Length: 157
+1 &gt; Content-Type: application/json; charset=UTF-8
+1 &gt; Host: api.escuelajs.co
+1 &gt; User-Agent: Apache-HttpClient/4.5.12 (Java/1.8.0_452)
+{"title":"New Karate Product - Debomita211","price":150,"description":"Created via Karate POST","categoryId":1,"images":["https://placeimg.com/640/480/any"]}
+
+20:12:13.991 response time in milliseconds: 1076.88
+1 &lt; 201
+1 &lt; Access-Control-Allow-Origin: *
+1 &lt; Connection: keep-alive
+1 &lt; Content-Length: 457
+1 &lt; Content-Security-Policy: script-src 'self' 'unsafe-inline' https://cdn.jsdelivr.net;img-src 'self' data: https://cdn.jsdelivr.net;default-src 'self';base-uri 'self';font-src 'self' https: data:;form-action 'self';frame-ancestors 'self';object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests
+1 &lt; Content-Type: application/json; charset=utf-8
+1 &lt; Cross-Origin-Opener-Policy: same-origin
+1 &lt; Cross-Origin-Resource-Policy: same-origin
+1 &lt; Date: Mon, 05 May 2025 14:42:13 GMT
+1 &lt; Etag: W/"1c9-5eDxoo9bMAi7m0g9rd3YUc5GM4g"
+1 &lt; Nel: {"report_to":"heroku-nel","max_age":3600,"success_fraction":0.005,"failure_fraction":0.05,"response_headers":["Via"]}
+1 &lt; Origin-Agent-Cluster: ?1
+1 &lt; Referrer-Policy: no-referrer
+1 &lt; Report-To: {"group":"heroku-nel","max_age":3600,"endpoints":[{"url":"https://nel.heroku.com/reports?ts=1746456133&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Fto9DyzZ29fb6nQm%2FuNFGAQARLyJaPTMNiESTMpD5XU%3D"}]}
+1 &lt; Reporting-Endpoints: heroku-nel=https://nel.heroku.com/reports?ts=1746456133&amp;sid=c46efe9b-d3d2-4a0c-8c76-bfafa16c5add&amp;s=Fto9DyzZ29fb6nQm%2FuNFGAQARLyJaPTMNiESTMpD5XU%3D
+1 &lt; Server: Cowboy
+1 &lt; Strict-Transport-Security: max-age=31536000; includeSubDomains
+1 &lt; Via: 1.1 vegur
+1 &lt; X-Content-Type-Options: nosniff
+1 &lt; X-Dns-Prefetch-Control: off
+1 &lt; X-Download-Options: noopen
+1 &lt; X-Frame-Options: SAMEORIGIN
+1 &lt; X-Permitted-Cross-Domain-Policies: none
+1 &lt; X-Xss-Protection: 0
+{"id":69,"title":"New Karate Product - Debomita211","slug":"new-karate-product-debomita211","price":150,"description":"Created via Karate POST","category":{"id":1,"name":"New Category1","slug":"new-category1","image":"https://placeimg.com/640/480/any","creationAt":"2025-05-05T09:17:38.000Z","updatedAt":"2025-05-05T13:48:26.000Z"},"images":["https://placeimg.com/640/480/any"],"creationAt":"2025-05-05T14:42:13.000Z","updatedAt":"2025-05-05T14:42:13.000Z"}</div>
+<div class="step-row">
+<div class="step-container" id="7">
+<div class="step-ref passed">7</div>
+<div class="step-cell passed">Then status 201</div>
+</div>
+<div class="time-cell passed">0</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="8">
+<div class="step-ref passed">8</div>
+<div class="step-cell passed">* def productId = response.id</div>
+</div>
+<div class="time-cell passed">5</div>
+</div>
+<div class="step-row">
+<div class="step-container" id="9">
+<div class="step-ref passed">9</div>
+<div class="step-cell passed">* print 'Created product ID:', productId</div>
+</div>
+<div class="time-cell passed">2</div>
+</div>
+<div class="preformatted" data-parent="9">20:12:14.000 [print] Created product ID: 69</div>
+</div>
+</div>
+    
+</div>   
+  
+</body>
+
+</html>
